@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Task Manager</title>
+	<link rel="stylesheet" href="12.css">
+</head>
+<body>
+	<header>
+		<h1 style="font-size: 36px; font-weight: bold; color: #3498db;">Daily Task Manager</h1>
+		<p style="font-size: 18px; color: #666;">Stay organized and focused with our daily task manager!</p>
+	</header>
+	<main>
+		<nav>
+			<ul>
+				<li><a href="#task-list">Task List</a></li>
+				<li><a href="#task-form">Add Task</a></li>
+				<li><a href="#stats">Statistics</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+		</nav>
+		<section id="task-list">
+			<h2 style="font-size: 24px; font-weight: bold; color: #2ecc71;">Today's Tasks</h2>
+			<ul id="task-list-ul" style="list-style: none; padding: 0; margin: 0;">
+				<!-- tasks will be added here -->
+			</ul>
+			<button id="add-task-btn" style="background-color: #2ecc71; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Add Task</button>
+		</section>
+		<section id="task-form">
+			<h2 style="font-size: 24px; font-weight: bold; color: #2ecc71;">Add a New Task</h2>
+			<form id="task-form-form" style="margin-top: 20px;">
+				<label for="task-name" style="font-size: 18px; color: #666;">Task Name:</label>
+				<input type="text" id="task-name" name="task-name" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+				<label for="task-description" style="font-size: 18px; color: #666;">Task Description:</label>
+				<textarea id="task-description" name="task-description" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+				<button type="submit" style="background-color: #2ecc71; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Add Task</button>
+			</form>
+		</section>
+		<section id="stats">
+			<h2 style="font-size: 24px; font-weight: bold; color: #2ecc71;">Statistics</h2>
+			<p style="font-size: 18px; color: #666;">Number of tasks completed: <span id="stats-completed">0</span></p>
+			<p style="font-size: 18px; color: #666;">Number of tasks pending: <span id="stats-pending">0</span></p>
+		</section>
+		<section id="settings">
+			<h2 style="font-size: 24px; font-weight: bold; color: #2ecc71;">Settings</h2>
+			<form id="settings-form" style="margin-top: 20px;">
+				<label for="settings-theme" style="font-size: 18px; color: #666;">Theme:</label>
+				<select id="settings-theme" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</select>
+				<button type="submit" style="background-color: #2ecc71; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Save Settings</button>
+			</form>
+		</section>
+	</main>
+	<script src="12.js"></script>
+</body>
+</html>
